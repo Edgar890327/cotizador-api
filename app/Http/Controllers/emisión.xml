@@ -1,0 +1,70 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <emitirCotizacion xmlns="http://com.gs.gsautos.ws.cotizacionEmision">            
+            <arg0 xmlns="">
+                <token>d2b0305e375184edd2538f26a0f38d89</token>                
+                <cliente>
+                    <cve_cli xmlns="KB_ObtenerClientes">0</cve_cli>
+                    <suc_emi xmlns="KB_ObtenerClientes">0</suc_emi>
+                    <fis_mor xmlns="KB_ObtenerClientes">F</fis_mor>
+                    <nom_cli xmlns="KB_ObtenerClientes">RICARDO</nom_cli>
+                    <ape_pat xmlns="KB_ObtenerClientes">CORREA</ape_pat>
+                    <ape_mat xmlns="KB_ObtenerClientes">BAUTISTA</ape_mat>
+                    <raz_soc xmlns="KB_ObtenerClientes"></raz_soc>
+                    <ane_cli xmlns="KB_ObtenerClientes"></ane_cli>
+                    <rfc_cli xmlns="KB_ObtenerClientes">COBR981215SL2</rfc_cli>
+                    <cve_ele xmlns="KB_ObtenerClientes">13246549734</cve_ele>
+                    <curpcli xmlns="KB_ObtenerClientes">CURP010101HDFABC01</curpcli>
+                    <sexocli xmlns="KB_ObtenerClientes">1</sexocli>
+                    <edo_civ xmlns="KB_ObtenerClientes">1</edo_civ>
+                    <cal_cli xmlns="KB_ObtenerClientes">CALLE 1</cal_cli>
+                    <num_cli xmlns="KB_ObtenerClientes">123</num_cli>
+                    <cod_pos xmlns="KB_ObtenerClientes">3800</cod_pos>
+                    <colonia xmlns="KB_ObtenerClientes">27968</colonia>
+
+		    <!-- SIN EFECTO, SE MANDAN DATOS VACIOS -->	
+                    <municip xmlns="KB_ObtenerClientes"></municip>
+                    <poblaci xmlns="KB_ObtenerClientes"></poblaci>
+                    <cve_est xmlns="KB_ObtenerClientes"></cve_est>
+		    <!--                                    -->
+
+                    <fec_nac xmlns="KB_ObtenerClientes">1990-01-01</fec_nac>
+                    <nac_ext xmlns="KB_ObtenerClientes">1</nac_ext>
+                    <ocu_pro xmlns="KB_ObtenerClientes">1</ocu_pro>
+                    <act_gir xmlns="KB_ObtenerClientes">1</act_gir>
+                    <telefo1 xmlns="KB_ObtenerClientes">1234567890</telefo1>
+                    <telefo2 xmlns="KB_ObtenerClientes"></telefo2>
+                    <telefo3 xmlns="KB_ObtenerClientes"></telefo3>
+                    <cor_ele xmlns="KB_ObtenerClientes">procelti@gmail.com</cor_ele>
+                    <pag_web xmlns="KB_ObtenerClientes"></pag_web>
+                    <can_con xmlns="KB_ObtenerClientes">0</can_con>
+                    <fue_ing xmlns="KB_ObtenerClientes">0</fue_ing>
+                    <adm_con xmlns="KB_ObtenerClientes">0</adm_con>
+                    <car_pub xmlns="KB_ObtenerClientes"></car_pub>
+                    <nom_car xmlns="KB_ObtenerClientes"></nom_car>
+                    <per_car xmlns="KB_ObtenerClientes"></per_car>
+                    <apo_cli xmlns="KB_ObtenerClientes"></apo_cli>
+		    <apo_cli_pat xmlns="KB_ObtenerClientes"></apo_cli_pat>
+                    <apo_cli_mat xmlns="KB_ObtenerClientes"></apo_cli_mat>
+                    <dom_ori xmlns="KB_ObtenerClientes"></dom_ori>
+                    <num_pas xmlns="KB_ObtenerClientes"></num_pas>
+                    <fec_alt xmlns="KB_ObtenerClientes"></fec_alt>
+                    <fec_act xmlns="KB_ObtenerClientes"></fec_act>
+                    <sta_cli xmlns="KB_ObtenerClientes"></sta_cli>
+                    <descuento xmlns="KB_ObtenerClientes">0</descuento>
+                </cliente>                
+                <datosIncisoEmision>
+                    <numeroMotor>123365788</numeroMotor>
+                    <numeroPlacas>123adaf</numeroPlacas>
+                    <numeroSerie>a12s3s3543a3g34a3a89</numeroSerie>
+                </datosIncisoEmision>
+                <idAgenteCompartido>0</idAgenteCompartido>
+                <idCliente>0</idCliente>
+                <idCotizacion>14083805</idCotizacion>
+                <idFormaPago>1</idFormaPago>
+                <idPaquete>2</idPaquete>
+                <inicioVigencia>2022-07-13</inicioVigencia>
+            </arg0>
+        </emitirCotizacion>
+    </Body>
+</Envelope>

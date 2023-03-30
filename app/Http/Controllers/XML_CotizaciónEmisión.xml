@@ -1,0 +1,342 @@
+<!-- MAPFRE WS_TW_ACotiza
+Entrada XML Cotización
+WS Néstor Villagómez
+Miercoles, 29 de Junio de 2022 
+Marca: ACURA
+Módelo: 2020
+Version: ILX
+-->
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<tem:WS_TW_ACotiza>
+			<!--Optional:-->
+			<tem:xml>
+				<![CDATA[<XML><SEGURIDAD><USER ID="GMAC0106" PWD="MXMIFNLKYZAQH5PRPHRLLA=="/></SEGURIDAD><DATA><COTIZACION><DATOS_POLIZA ID_NEGOCIO="ZONA_ALIADOS" NUM_POLIZA_GRUPO="4SEGA05400001" NUM_CONTRATO="40020" COD_SECTOR="4" COD_RAMO="401" FEC_EFEC_POLIZA="29/06/2022" FEC_VCTO_POLIZA="29/06/2023" COD_FRACC_PAGO="1" COD_CUADRO_COM="1" COD_AGT="29709" COD_USR="GMAC0106" COD_NIVEL3_CAPTURA="0" TIP_DOCUM="RFC" COD_DOCUM="PRUEBA" COD_ESTADO="16" COD_PROV="16072" PCT_AGT="100" COD_GESTOR="29709" TIP_GESTOR="AG"/><DATOS_VARIABLES NUM_RIESGO="1" TIP_NIVEL="3"><CAMPO COD_CAMPO="COD_MATERIA" VAL_CAMPO="1"/></DATOS_VARIABLES><DATOS_VARIABLES19 NUM_RIESGO="1" TIP_NIVEL="2"><CAMPO9 COD_CAMPO="COD_MODALIDAD" VAL_CAMPO="40999"/><CAMPO11 COD_CAMPO="ANIO_FABRICA" VAL_CAMPO="2020"/><CAMPO12 COD_CAMPO="COD_MARCA" VAL_CAMPO="65"/><CAMPO13 COD_CAMPO="COD_MODELO" VAL_CAMPO="34"/><CAMPO14 COD_CAMPO="COD_TIP_VEHI" VAL_CAMPO="1"/><CAMPO15 COD_CAMPO="COD_USO_VEHI" VAL_CAMPO="464"/><CAMPO16 COD_CAMPO="MCA_FACTURA" VAL_CAMPO="N"/><CAMPO17 COD_CAMPO="MCA_ACTUAL" VAL_CAMPO="N"/><CAMPO18 COD_CAMPO="MCA_COMERCIAL" VAL_CAMPO="S"/><CAMPO20 COD_CAMPO="MCA_COMERCIAL10" VAL_CAMPO="N"/><CAMPO21 COD_CAMPO="FEC_FACTURA" VAL_CAMPO="10052022"/><CAMPO22 COD_CAMPO="NUM_FACTURA" VAL_CAMPO="ABCD1234"/><CAMPO23 COD_CAMPO="VAL_FACTURA" VAL_CAMPO="350000"/><CAMPO24 COD_CAMPO="NUM_PASAJEROS" VAL_CAMPO="5"/><CAMPO25 COD_CAMPO="NUM_SERIE" VAL_CAMPO="XXXX"/></DATOS_VARIABLES19><DATOS_VARIABLES22 NUM_RIESGO="0" TIP_NIVEL="1"><CAMPO19 COD_CAMPO="COD_BONI_RECA" VAL_CAMPO="999"/><CAMPO21 COD_CAMPO="PCT_COD_REC_ESP" VAL_CAMPO="-23"/></DATOS_VARIABLES22><COBERTURAS><COBERTURA COD_COB="4000" SUMA_ASEG="C" COD_FRANQUICIA="5"/><COBERTURA24 COD_COB="4001" SUMA_ASEG="C" COD_FRANQUICIA="10"/><COBERTURA25 COD_COB="4010" SUMA_ASEG="1500000"/><COBERTURA26 COD_COB="4011" SUMA_ASEG="1500000"/><COBERTURA27 COD_COB="4006" SUMA_ASEG="200000"/><COBERTURA28 COD_COB="4003" SUMA_ASEG="1"/><COBERTURA29 COD_COB="4004" SUMA_ASEG="1"/><COBERTURA30 COD_COB="4012" SUMA_ASEG="0" COD_FRANQUICIA="0"/><COBERTURA32 COD_COB="4013" SUMA_ASEG="100000"/><COBERTURA33 COD_COB="4022" SUMA_ASEG="0" COD_FRANQUICIA="0"/><COBERTURA35 COD_COB="4024" SUMA_ASEG="0"/><COBERTURA37 COD_COB="4028" SUMA_ASEG="0" COD_FRANQUICIA="0"/><COBERTURA45 COD_COB="4068" SUMA_ASEG="0"/></COBERTURAS><DATOS_CH_TMV51><CAMPO52 COD_CAMPO="MCA_SEXO" VAL_CAMPO="1"/><CAMPO53 COD_CAMPO="COD_ESTADO" VAL_CAMPO="16"/><CAMPO54 COD_CAMPO="COD_PROV" VAL_CAMPO="16072"/><CAMPO55 COD_CAMPO="FEC_NACIMIENTO" VAL_CAMPO="01011985"/><CAMPO56 COD_CAMPO="COD_POSTAL" VAL_CAMPO="11000"/><CAMPO57 COD_CAMPO="RFC" VAL_CAMPO="CAMR850101"/><CAMPO58 COD_CAMPO="NOM_TERCERO" VAL_CAMPO="RAMIRO"/><CAMPO59 COD_CAMPO="APE1_TERCERO" VAL_CAMPO="CARRIZO"/><CAMPO60 COD_CAMPO="APE2_TERCERO" VAL_CAMPO="MENDOZA"/><CAMPO61 COD_CAMPO="MCA_FISICO" VAL_CAMPO="S"/></DATOS_CH_TMV51></COTIZACION></DATA></XML>]]>
+			</tem:xml>
+			<!--Optional:-->
+			<tem:token>dcc11f18-b748-4ff8-8f9d-622d4c6d4d9b</tem:token>
+		</tem:WS_TW_ACotiza>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+<!-- Respuesta Exitosa de Cotización en JSON 
+{
+    "status": "success",
+    "descuento": 0,
+    "data": {
+        "WS_TW_ACotizaResult": {
+            "xml": {
+                "param": {
+                    "result": "true"
+                },
+                "data": {
+                    "cotizacion": {
+                        "coberturas": [
+                            {
+                                "COD_COB": "4000",
+                                "COBERTURA": "DANOS MATERIALES",
+                                "LIMMAXRESP": "537330",
+                                "DEDUCIBLE": "5",
+                                "PRIMAS": "6955.67"
+                            },
+                            {
+                                "COD_COB": "4001",
+                                "COBERTURA": "ROBO TOTAL",
+                                "LIMMAXRESP": "537330",
+                                "DEDUCIBLE": "10",
+                                "PRIMAS": "8822.98"
+                            },
+                            {
+                                "COD_COB": "4003",
+                                "COBERTURA": "ASISTENCIA COMPLETA",
+                                "LIMMAXRESP": "1",
+                                "DEDUCIBLE": "",
+                                "PRIMAS": "368.85"
+                            },
+                            {
+                                "COD_COB": "4004",
+                                "COBERTURA": "DEFENSA JURIDICA",
+                                "LIMMAXRESP": "1",
+                                "DEDUCIBLE": "",
+                                "PRIMAS": "250.57"
+                            },
+                            {
+                                "COD_COB": "4006",
+                                "COBERTURA": "GASTOS MEDICOS",
+                                "LIMMAXRESP": "200000",
+                                "DEDUCIBLE": "",
+                                "PRIMAS": "176.12"
+                            },
+                            {
+                                "COD_COB": "4010",
+                                "COBERTURA": "RC A TERCEROS EN SUS BIENES",
+                                "LIMMAXRESP": "1500000",
+                                "DEDUCIBLE": "0",
+                                "PRIMAS": "2192.01"
+                            },
+                            {
+                                "COD_COB": "4011",
+                                "COBERTURA": "RC A TERCEROS EN SUS PERSONAS",
+                                "LIMMAXRESP": "1500000",
+                                "DEDUCIBLE": "0",
+                                "PRIMAS": "250.59"
+                            },
+                            {
+                                "COD_COB": "4013",
+                                "COBERTURA": "ACCIDENTES AL CONDUCTOR",
+                                "LIMMAXRESP": "100000",
+                                "DEDUCIBLE": "",
+                                "PRIMAS": "185.38"
+                            }
+                        ],
+                        "Totales": {
+                            "total_prima_neta": "16553.60",
+                            "total_derechos": "520",
+                            "total_recargos": "0",
+                            "total_iva": "2731.77",
+                            "prima_total": "19805.37"
+                        },
+                        "FormaPago": {
+                            "Recibos": {
+                                "Periodo": "1",
+                                "PrimaTotalPrimerRecibo": "19805.37",
+                                "RecibosAdicionales": "0",
+                                "PrimaTotalXReciboAdicional": ""
+                            }
+                        },
+                        "Recibos": {
+                            "Recibo": {
+                                "Poliza": "2240100052800",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "FechaInicio": "29/06/2022 12:00:00 a.m.",
+                                "FechaTermino": "29/06/2023 12:00:00 a.m.",
+                                "PrimaNeta": "16553.60",
+                                "Derecho": "520",
+                                "Recargo": "0",
+                                "PorcentajeIVA": "16",
+                                "IVA": "2731.77",
+                                "PrimaTotal": "19805.37",
+                                "Serie": "1/1",
+                                "Comision": "1655.36",
+                                "PorcentajeUDI": "",
+                                "UDI": "",
+                                "EstatusID": "PENDIENTE"
+                            }
+                        },
+                        "!error": "false",
+                        "!NUM_POLIZA": "2240100052800"
+                    }
+                }
+            }
+        }
+    }
+} -->
+
+<!-- MAPFRE WS_TW_AEmite
+Entrada XML Emisión
+WS Néstor Villagómez
+Miercoles, 29 de Junio de 2022 
+Marca: ACURA
+Módelo: 2020
+Version: ILX
+-->
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<tem:WS_TW_AEmite>
+			<!--Optional:-->
+			<tem:xml>
+				<![CDATA[<XML><SEGURIDAD><USER ID="GMAC0106" PWD="MXMIFNLKYZAQH5PRPHRLLA=="/></SEGURIDAD><DATA><POLIZA><DATOS_POLIZA ID_NEGOCIO="ZONA_ALIADOS" NUM_POLIZA_GRUPO="4SEGA05400001" NUM_CONTRATO="40020" COD_SECTOR="4" COD_RAMO="401" FEC_EFEC_POLIZA="29/06/2022" FEC_VCTO_POLIZA="29/06/2023" COD_FRACC_PAGO="1" COD_CUADRO_COM="1" COD_AGT="29709" COD_USR="GMAC0106" COD_NIVEL3_CAPTURA="0" TIP_DOCUM="RFC" COD_DOCUM="FOMJ981126KM9" COD_ESTADO="16" COD_PROV="16072" PCT_AGT="100" COD_GESTOR="29709" TIP_GESTOR="AG"/><DATOS_VARIABLES NUM_RIESGO="1" TIP_NIVEL="3"><CAMPO COD_CAMPO="COD_MATERIA" VAL_CAMPO="1"/></DATOS_VARIABLES><DATOS_VARIABLES44 TIP_NIVEL="2" NUM_RIESGO="1"><CAMPO9 VAL_CAMPO="S8R1ES1198237885" COD_CAMPO="NUM_SERIE"/><CAMPO11 VAL_CAMPO="40999" COD_CAMPO="COD_MODALIDAD"/><CAMPO12 VAL_CAMPO="2020" COD_CAMPO="ANIO_FABRICA"/><CAMPO13 VAL_CAMPO="65" COD_CAMPO="COD_MARCA"/><CAMPO14 VAL_CAMPO="34" COD_CAMPO="COD_MODELO"/><CAMPO15 VAL_CAMPO="1" COD_CAMPO="COD_TIP_VEHI"/><CAMPO16 VAL_CAMPO="464" COD_CAMPO="COD_USO_VEHI"/><CAMPO17 VAL_CAMPO="N" COD_CAMPO="MCA_FACTURA"/><CAMPO18 VAL_CAMPO="N" COD_CAMPO="MCA_ACTUAL"/><CAMPO19 VAL_CAMPO="S" COD_CAMPO="MCA_COMERCIAL"/><CAMPO20 VAL_CAMPO="N" COD_CAMPO="MCA_COMERCIAL10"/><CAMPO21 VAL_CAMPO="ABC123" COD_CAMPO="NUM_MATRICULA"/><CAMPO22 VAL_CAMPO="4321ABC" COD_CAMPO="NUM_MOTOR"/><CAMPO23 VAL_CAMPO="5" COD_CAMPO="NUM_PASAJEROS"/><CAMPO24 VAL_CAMPO="350000" COD_CAMPO="VAL_FACTURA"/><CAMPO25 VAL_CAMPO="AB12345" COD_CAMPO="NUM_FACTURA"/><CAMPO26 VAL_CAMPO="01082019" COD_CAMPO="FEC_FACTURA"/><CAMPO27 VAL_CAMPO="0" COD_CAMPO="VAL_ACTUAL"/></DATOS_VARIABLES44><DATOS_VARIABLES49 TIP_NIVEL="1" NUM_RIESGO="0"><CAMPO44 VAL_CAMPO="999" COD_CAMPO="COD_BONI_RECA"/><CAMPO46 VAL_CAMPO="-23" COD_CAMPO="PCT_COD_REC_ESP"/><CAMPO47 VAL_CAMPO="100" COD_CAMPO="PCT_CESION_COM_AGT"/><CAMPO48 VAL_CAMPO="1" COD_CAMPO="MEDIO_CAPTACION"/><CAMPO70 VAL_CAMPO="EMPLE123" COD_CAMPO="NUM_EMPLEADO"/></DATOS_VARIABLES49><COBERTURAS><COBERTURA COD_FRANQUICIA="5" SUMA_ASEG="C" COD_COB="4000"/><COBERTURA51 COD_FRANQUICIA="10" SUMA_ASEG="C" COD_COB="4001"/><COBERTURA52 SUMA_ASEG="1500000" COD_COB="4010"/><COBERTURA53 SUMA_ASEG="1500000" COD_COB="4011"/><COBERTURA54 SUMA_ASEG="200000" COD_COB="4006"/><COBERTURA55 SUMA_ASEG="1" COD_COB="4003"/><COBERTURA56 SUMA_ASEG="1" COD_COB="4004"/><COBERTURA57 SUMA_ASEG="0" COD_COB="4012" COD_FRANQUICIA="0"/><COBERTURA59 SUMA_ASEG="100000" COD_COB="4013"/><COBERTURA60 SUMA_ASEG="0" COD_COB="4022" COD_FRANQUICIA="0"/><COBERTURA62 SUMA_ASEG="0" COD_COB="4024"/><COBERTURA64 SUMA_ASEG="0" COD_COB="4028" COD_FRANQUICIA="0"/><COBERTURA68 SUMA_ASEG="0" COD_COB="4068"/></COBERTURAS><TERCEROS><CONTRATANTE COD_PROV="16072" COD_ESTADO="16" COD_DOCUM="FOMJ981126KM9" MODIFICADO="N" TLF_MOVIL="4433985109" EMAIL="procelti@gmail.com" TLF_NUMERO="4433985109" COD_POSTAL="58980" FEC_NACIMIENTO="26/11/1998" MCA_SEXO="1" COD_LOCALIDAD="16072" NOM_DOMICILIO3="HIDALGO" NOM_DOMICILIO1="CENTRO" NOM_TERCERO="JUAN PABLO" APE2_TERCERO="FLORES" APE1_TERCERO="MENDOZA" MCA_FISICO="S" /><CONDUCTOR COD_PROV="16072" COD_ESTADO="16" COD_DOCUM="FOMJ981126KM9" MODIFICADO="N" TLF_MOVIL="4433985109" EMAIL="procelti@gmail.com" TLF_NUMERO="4433985109" COD_POSTAL="58980" FEC_NACIMIENTO="26/11/1998" MCA_SEXO="1" COD_LOCALIDAD="16072" NOM_DOMICILIO3="HIDALGO" NOM_DOMICILIO1="CENTRO" NOM_TERCERO="JUAN PABLO" APE2_TERCERO="FLORES" APE1_TERCERO="MENDOZA" MCA_FISICO="S" /><BENEFICIARIO COD_PROV="16072" COD_ESTADO="16" COD_DOCUM="RAMS790421QJ0" MODIFICADO="N" TLF_MOVIL="5518422670" EMAIL="SON@MAIL.COM" TLF_NUMERO="5871144248" COD_POSTAL="58980" FEC_NACIMIENTO="21/04/1979" MCA_SEXO="0" COD_LOCALIDAD="16072" NOM_DOMICILIO3="LA CRUZ" NOM_DOMICILIO1="LA CRUZ" NOM_TERCERO="ALBERTO" APE2_TERCERO="GARDUÑO" APE1_TERCERO="RAMIREZ" MCA_FISICO="S"/><YO COD_PROV="16072" COD_ESTADO="16" COD_DOCUM="RAMS790421QJ0" MODIFICADO="N" TLF_MOVIL="5518422670" EMAIL="SON@MAIL.COM" TLF_NUMERO="5871144248" COD_POSTAL="58980" FEC_NACIMIENTO="21/04/1979" MCA_SEXO="0" COD_LOCALIDAD="16072" NOM_DOMICILIO3="LA CRUZ" NOM_DOMICILIO1="LA CRUZ" NOM_TERCERO="ALBERTO" APE2_TERCERO="GARDUÑO" APE1_TERCERO="RAMIREZ" MCA_FISICO="S"/></TERCEROS></POLIZA></DATA></XML>]]>
+			</tem:xml>
+			<!--Optional:-->
+			<tem:token>dcc11f18-b748-4ff8-8f9d-622d4c6d4d9b</tem:token>
+		</tem:WS_TW_AEmite>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+<!-- Respuesta Exitosa de Emisión en JSON 
+{
+    "status": "success",
+    "data": {
+        "WS_TW_AEmiteResult": {
+            "xml": {
+                "param": {
+                    "result": "true"
+                },
+                "data": {
+                    "PrimasPoliza": {
+                        "Poliza": "4012200003072",
+                        "Inciso": "1",
+                        "Endoso": "0",
+                        "PrimaNeta": "20108.64",
+                        "Derecho": "520",
+                        "PorcentajeRecargo": "0",
+                        "Recargo": "0",
+                        "PrimaTotal": "23929.22",
+                        "PorcentajeComision": "10",
+                        "Comision": "2010.86",
+                        "PorcentajeUDI": "",
+                        "UDI": "",
+                        "PorcentajeDescuento": "-23",
+                        "Descuento": "-4624.99",
+                        "PorcentajeIVA": "16",
+                        "IVA": "3300.58"
+                    },
+                    "Coberturas": {
+                        "Cobertura": [
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4000",
+                                "CoberturaNombre": "DANOS MATERIALES",
+                                "SumaAsegurada": "537330",
+                                "PrimaNeta": "7284.03",
+                                "Deducible": "5"
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4001",
+                                "CoberturaNombre": "ROBO TOTAL",
+                                "SumaAsegurada": "537330",
+                                "PrimaNeta": "9239.48",
+                                "Deducible": "10"
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4003",
+                                "CoberturaNombre": "ASISTENCIA COMPLETA",
+                                "SumaAsegurada": "1",
+                                "PrimaNeta": "386.26",
+                                "Deducible": ""
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4004",
+                                "CoberturaNombre": "DEFENSA JURIDICA",
+                                "SumaAsegurada": "1",
+                                "PrimaNeta": "262.40",
+                                "Deducible": ""
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4006",
+                                "CoberturaNombre": "GASTOS MEDICOS",
+                                "SumaAsegurada": "200000",
+                                "PrimaNeta": "184.43",
+                                "Deducible": ""
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4010",
+                                "CoberturaNombre": "RC A TERCEROS EN SUS BIENES",
+                                "SumaAsegurada": "1500000",
+                                "PrimaNeta": "2295.49",
+                                "Deducible": "0"
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4011",
+                                "CoberturaNombre": "RC A TERCEROS EN SUS PERSONAS",
+                                "SumaAsegurada": "1500000",
+                                "PrimaNeta": "262.43",
+                                "Deducible": "0"
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4013",
+                                "CoberturaNombre": "ACCIDENTES AL CONDUCTOR",
+                                "SumaAsegurada": "100000",
+                                "PrimaNeta": "194.12",
+                                "Deducible": ""
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4091",
+                                "CoberturaNombre": "ACUMULA DER. POL.",
+                                "SumaAsegurada": "0",
+                                "PrimaNeta": "0",
+                                "Deducible": ""
+                            },
+                            {
+                                "Poliza": "4012200003072",
+                                "Inciso": "1",
+                                "Endoso": "0",
+                                "CoberturaID": "4903",
+                                "CoberturaNombre": "FICTICIA AJUSTE RIESGO",
+                                "SumaAsegurada": "0",
+                                "PrimaNeta": "",
+                                "Deducible": ""
+                            }
+                        ]
+                    },
+                    "Recibos": {
+                        "Recibo": {
+                            "Poliza": "4012200003072",
+                            "Inciso": "1",
+                            "Endoso": "0",
+                            "FechaInicio": "29/06/2022 12:00:00 a.m.",
+                            "FechaTermino": "29/06/2023 12:00:00 a.m.",
+                            "PrimaNeta": "20108.64",
+                            "Derecho": "520",
+                            "Recargo": "0",
+                            "PorcentajeIVA": "16",
+                            "IVA": "3300.58",
+                            "PrimaTotal": "23929.22",
+                            "Serie": "1/1",
+                            "Comision": "2010.86",
+                            "PorcentajeUDI": "",
+                            "UDI": "",
+                            "EstatusID": "PENDIENTE"
+                        }
+                    }
+                }
+            }
+        }
+    }
+} -->
+
+
+https://negociosuat.mapfre.com.mx/VIPII/wImpresion/MarcoImpresions.aspx?Poliza=4012200003072&amp;Endoso=0&amp;Token=4e31f885-077f-4ff1-b8c4-7c0e645fa224
+https://negociosuat.mapfre.com.mx/vip/emision/PolizaAlfaS.aspx?poli=4012200003072&amp;strEndoso=0&amp;NMI=1&amp;token=4e31f885-077f-4ff1-b8c4-7c0e645fa224
+
+
+
+<CONTRATANTE COD_PROV="'.$request->cod_provincia.'" COD_ESTADO="'.$request->cod_estado.'" COD_DOCUM="'.$request->rfc.'" MODIFICADO="N" TLF_MOVIL="'.$request->telefono.'" EMAIL="'.$request->correo.'" TLF_NUMERO="'.$request->telefono.'" COD_POSTAL="'.$request->cod_postal.'" FEC_NACIMIENTO="'.$request->fecha_nacimiento.'" MCA_SEXO="'.$request->sexo.'" COD_LOCALIDAD="'.$request->cod_provincia.'" NOM_DOMICILIO3="'.$request->direccion.'" NOM_DOMICILIO1="" NOM_TERCERO="'.$request->nombre.'" APE2_TERCERO="'.$request->apellido_p.'" APE1_TERCERO="'.$request->apellido_m.'" MCA_FISICO="'.$request->tipo_persona.'" /><CONDUCTOR COD_PROV="'.$request->cod_provincia.'" COD_ESTADO="'.$request->cod_estado.'" COD_DOCUM="'.$request->rfc.'" MODIFICADO="N" TLF_MOVIL="'.$request->telefono.'" EMAIL="'.$request->correo.'" TLF_NUMERO="'.$request->telefono.'" COD_POSTAL="'.$request->cod_postal.'" FEC_NACIMIENTO="'.$request->fecha_nacimiento.'" MCA_SEXO="'.$request->sexo.'" COD_LOCALIDAD="'.$request->cod_provincia.'" NOM_DOMICILIO3="'.$request->direccion.'" NOM_DOMICILIO1="" NOM_TERCERO="'.$request->nombre.'" APE2_TERCERO="'.$request->apellido_p.'" APE1_TERCERO="'.$request->apellido_m.'" MCA_FISICO="'.$request->tipo_persona.'" /><BENEFICIARIO COD_PROV="'.$request->benefi_cod_provincia.'" COD_ESTADO="'.$request->benefi_cod_estado.'" COD_DOCUM="'.$request->benefi_rfc.'" MODIFICADO="N" TLF_MOVIL="'.$request->benefi_telefono1.'" EMAIL="'.$request->benefi_correo.'" TLF_NUMERO="'.$request->benefi_telefono2.'" COD_POSTAL="'.$request->benefi_cod_postal.'" FEC_NACIMIENTO="'.$request->benefi_fecha_nacimiento.'" MCA_SEXO="'.$request->benefi_sexo.'" COD_LOCALIDAD="'.$request->benefi_cod_provincia.'" NOM_DOMICILIO3="'.$request->benefi_direccion1.'" NOM_DOMICILIO1="'.$request->benefi_direccion2.'" NOM_TERCERO="'.$request->benefi_nombre.'" APE2_TERCERO="'.$request->benefi_apellido_p.'" APE1_TERCERO="'.$request->benefi_apellido_m.'" MCA_FISICO="'.$request->benefi_tipo_persona.'" /><YO COD_PROV="'.$request->benefi_cod_provincia.'" COD_ESTADO="'.$request->benefi_cod_estado.'" COD_DOCUM="'.$request->benefi_rfc.'" MODIFICADO="N" TLF_MOVIL="'.$request->benefi_telefono1.'" EMAIL="'.$request->benefi_correo.'" TLF_NUMERO="'.$request->benefi_telefono2.'" COD_POSTAL="'.$request->benefi_cod_postal.'" FEC_NACIMIENTO="'.$request->benefi_fecha_nacimiento.'" MCA_SEXO="'.$request->benefi_sexo.'" COD_LOCALIDAD="'.$request->benefi_cod_provincia.'" NOM_DOMICILIO3="'.$request->benefi_direccion1.'" NOM_DOMICILIO1="'.$request->benefi_direccion2.'" NOM_TERCERO="'.$request->benefi_nombre.'" APE2_TERCERO="'.$request->benefi_apellido_p.'" APE1_TERCERO="'.$request->benefi_apellido_m.'" MCA_FISICO="'.$request->benefi_tipo_persona.'" />
+
+
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:tem=\"http://tempuri.org/\">                        
+	<soapenv:Header/>
+	<soapenv:Body>                            
+		<tem:WS_TW_ACotiza>
+			<!--Optional:-->                                
+			<tem:xml>
+				<![CDATA[<XML><SEGURIDAD><USER ID=\"GMAC0106\" PWD=\"MXMIFNLKYZAQH5PRPHRLLA==\"/></SEGURIDAD><DATA><COTIZACION><DATOS_POLIZA ID_NEGOCIO=\"ZONA_ALIADOS\" NUM_POLIZA_GRUPO=\"4SEGA05400001\" NUM_CONTRATO=\"40020\" COD_SECTOR=\"4\" COD_RAMO=\"401\" FEC_EFEC_POLIZA=\"18/07/2022\" FEC_VCTO_POLIZA=\"18/07/2023\" COD_FRACC_PAGO=\"1\" COD_CUADRO_COM=\"1\" COD_AGT=\"29709\" COD_USR=\"GMAC0106\" COD_NIVEL3_CAPTURA=\"0\" TIP_DOCUM=\"RFC\" COD_DOCUM=\"PRUEBA\" COD_ESTADO=\"16\" COD_PROV=\"16072\" PCT_AGT=\"100\" COD_GESTOR=\"29709\" TIP_GESTOR=\"AG\"/><DATOS_VARIABLES NUM_RIESGO=\"1\" TIP_NIVEL=\"3\"><CAMPO COD_CAMPO=\"COD_MATERIA\" VAL_CAMPO=\"1\"/></DATOS_VARIABLES><DATOS_VARIABLES19 NUM_RIESGO=\"1\" TIP_NIVEL=\"2\"><CAMPO9 COD_CAMPO=\"COD_MODALIDAD\" VAL_CAMPO=\"40999\"/><CAMPO11 COD_CAMPO=\"ANIO_FABRICA\" VAL_CAMPO=\"2008\"/><CAMPO12 COD_CAMPO=\"COD_MARCA\" VAL_CAMPO=\"47\"/><CAMPO13 COD_CAMPO=\"COD_MODELO\" VAL_CAMPO=\"25\"/><CAMPO14 COD_CAMPO=\"COD_TIP_VEHI\" VAL_CAMPO=\"1\"/><CAMPO15 COD_CAMPO=\"COD_USO_VEHI\" VAL_CAMPO=\"464\"/><CAMPO16 COD_CAMPO=\"MCA_FACTURA\" VAL_CAMPO=\"N\"/><CAMPO17 COD_CAMPO=\"MCA_ACTUAL\" VAL_CAMPO=\"N\"/><CAMPO18 COD_CAMPO=\"MCA_COMERCIAL\" VAL_CAMPO=\"S\"/><CAMPO20 COD_CAMPO=\"MCA_COMERCIAL10\" VAL_CAMPO=\"N\"/><CAMPO21 COD_CAMPO=\"FEC_FACTURA\" VAL_CAMPO=\"10052022\"/><CAMPO22 COD_CAMPO=\"NUM_FACTURA\" VAL_CAMPO=\"ABCD1234\"/><CAMPO23 COD_CAMPO=\"VAL_FACTURA\" VAL_CAMPO=\"350000\"/><CAMPO24 COD_CAMPO=\"NUM_PASAJEROS\" VAL_CAMPO=\"5\"/><CAMPO25 COD_CAMPO=\"NUM_SERIE\" VAL_CAMPO=\"\"/></DATOS_VARIABLES19><DATOS_VARIABLES22 NUM_RIESGO=\"0\" TIP_NIVEL=\"1\"><CAMPO19 COD_CAMPO=\"COD_BONI_RECA\" VAL_CAMPO=\"999\"/><CAMPO21 COD_CAMPO=\"PCT_COD_REC_ESP\" VAL_CAMPO=\"-23\"/></DATOS_VARIABLES22><COBERTURAS><COBERTURA COD_COB=\"4000\" SUMA_ASEG=\"C\" COD_FRANQUICIA=\"5\"/><COBERTURA24 COD_COB=\"4001\" SUMA_ASEG=\"C\" COD_FRANQUICIA=\"10\"/><COBERTURA25 COD_COB=\"4010\" SUMA_ASEG=\"1500000\"/><COBERTURA26 COD_COB=\"4011\" SUMA_ASEG=\"1500000\"/><COBERTURA27 COD_COB=\"4006\" SUMA_ASEG=\"200000\"/><COBERTURA28 COD_COB=\"4003\" SUMA_ASEG=\"1\"/><COBERTURA29 COD_COB=\"4004\" SUMA_ASEG=\"1\"/><COBERTURA30 COD_COB=\"4012\" SUMA_ASEG=\"0\" COD_FRANQUICIA=\"0\"/><COBERTURA32 COD_COB=\"4013\" SUMA_ASEG=\"100000\"/><COBERTURA33 COD_COB=\"4022\" SUMA_ASEG=\"0\" COD_FRANQUICIA=\"0\"/><COBERTURA35 COD_COB=\"4024\" SUMA_ASEG=\"0\"/><COBERTURA37 COD_COB=\"4028\" SUMA_ASEG=\"0\" COD_FRANQUICIA=\"0\"/><COBERTURA45 COD_COB=\"4068\" SUMA_ASEG=\"0\"/></COBERTURAS><DATOS_CH_TMV51><CAMPO52 COD_CAMPO=\"MCA_SEXO\" VAL_CAMPO=\"0\" /><CAMPO53 COD_CAMPO=\"COD_ESTADO\" VAL_CAMPO=\"16\" /><CAMPO54 COD_CAMPO=\"COD_PROV\" VAL_CAMPO=\"72\" /><CAMPO55 COD_CAMPO=\"FEC_NACIMIENTO\" VAL_CAMPO=\"26111998\" /><CAMPO56 COD_CAMPO=\"COD_POSTAL\" VAL_CAMPO=\"58980\" /><CAMPO57 COD_CAMPO=\"RFC\" VAL_CAMPO=\"FOMJ981126KM9\" /><CAMPO58 COD_CAMPO=\"NOM_TERCERO\" VAL_CAMPO=\"Juan Pablo de Jesus\" /><CAMPO59 COD_CAMPO=\"APE1_TERCERO\" VAL_CAMPO=\"Flores\" /><CAMPO60 COD_CAMPO=\"APE2_TERCERO\" VAL_CAMPO=\"Mendoza\" /><CAMPO61 COD_CAMPO=\"MCA_FISICO\" VAL_CAMPO=\"S\" /></DATOS_CH_TMV51></COTIZACION></DATA></XML>]]>
+			</tem:xml>                            
+			<!--Optional:-->
+			<tem:token>dcc11f18-b748-4ff8-8f9d-622d4c6d4d9b</tem:token>\n                            
+		</tem:WS_TW_ACotiza>\n                        
+	</soapenv:Body>\n                    
+</soapenv:Envelope>
